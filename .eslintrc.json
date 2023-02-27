@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:prettier/recommended"
+  ],
+  "env": {
+    "jest/globals": true
+  },
+  "plugins": ["unused-imports", "jest"],
+  "rules": {
+    "unused-imports/no-unused-imports": "error",
+    "sort-imports": [
+      "error",
+      {
+        "ignoreDeclarationSort": true
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never"
+      }
+    ],
+    "no-shadow": "off",
+    "prettier/prettier": "error",
+    "import/prefer-default-export": "off"
+  }
+}
